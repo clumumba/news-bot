@@ -5,4 +5,9 @@ artifacts/
 *.pyc
 *data
 sample_data
-.env
+*.env
+*.log
+requirements
+docs/
+reports/
+newsbot
