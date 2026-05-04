@@ -5,3 +5,4 @@ artifacts/
 *.pyc
 *data
 sample_data
+.env
