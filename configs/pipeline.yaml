@@ -1,0 +1,33 @@
+project_name: "newsbot-intelligence-system"
+artifacts_dir: "artifacts"
+
+data:
+  train_path: "data/raw/train.csv"
+  validation_path: "data/raw/validation.csv"
+  text_column: "text"
+  text_columns:
+    - "headline"
+    - "content"
+  label_column: "category"
+  timestamp_column: "published_at"
+  source_column: "source"
+  language_column: "language"
+  drop_duplicates: true
+  min_text_length: 25
+  allowed_labels:
+    - business
+    - politics
+    - technology
+    - science
+    - sports
+
+model:
+  max_features: 20000
+  ngram_range: [1, 2]
+  min_df: 1
+  classifier: "logistic_regression"
+  random_state: 42
+
+monitoring:
+  service_name: "newsbot-intelligence-api"
+  drift_sample_size: 1000

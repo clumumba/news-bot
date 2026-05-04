@@ -1,0 +1,2 @@
+"""NewsBot source package root."""
+
