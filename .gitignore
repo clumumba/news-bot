@@ -6,8 +6,8 @@ artifacts/
 *data
 sample_data
 *.env
-server.*.log
-uvicorn.*.log
+server.err.log
+uvicorn.err.log
 requirements
 docs/
 reports/
